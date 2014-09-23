@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Book Admin Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap Core CSS -->
+        <link href="../resources/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href="../resources/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <!-- Custom CSS -->
+        <link href="../resources/css2/sb-admin.css" rel="stylesheet">
+        <link href="../resources/css2/4-col-portfolio.css" rel="stylesheet">
+		
+		<!--C3 CSS -->
+		<link href = "../resources/css/c3.min.css" rel="stylesheet">
+		
+		<!---JavaScript--->
+		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<script src = "../resources/js/c3.min.js"></script>
+    </head>
+    <body>
+        
+        <div id="navigation">
+            <!-- Navigation -->
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Elm Live-brary</a>
+                </div>
+                <!-- Top Menu Items -->
+                <ul class="nav navbar-right top-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Book Admin Joe <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#"><i class="fa fa-fw fa-user"></i> Account</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- /.navbar-collapse -->
+            </nav>
+        </div>
+        
+        <!-- Page Content -->
+        <div class="container">
+            
+            <div id="dashboard">
+
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="page-header">
+                                Dashboard
+                            </h1>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+
+                    <div class="row">
+                        <a href="add_book.html">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        <div class="row">
+                                            <div class="col-xs-3">
+                                                <i class="fa fa-book fa-5x"></i>
+                                            </div>
+                                            <div class="col-xs-9 text-right">
+                                                <div>Add A Book</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="search.html">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="panel panel-green">
+                                    <div class="panel-heading">
+                                        <div class="row">
+                                            <div class="col-xs-3">
+                                                <i class="fa fa-tasks fa-5x"></i>
+                                            </div>
+                                            <div class="col-xs-9 text-right">
+                                                <div>Search Books</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="users.html">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        <div class="row">
+                                            <div class="col-xs-3">
+                                                <i class="fa fa-users fa-5x"></i>
+                                            </div>
+                                            <div class="col-xs-9 text-right">
+                                                <div>Manage Users</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="support.html">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="panel panel-red">
+                                    <div class="panel-heading">
+                                        <div class="row">
+                                            <div class="col-xs-3">
+                                                <i class="fa fa-support fa-5x"></i>
+                                            </div>
+                                            <div class="col-xs-9 text-right">
+                                                <div>Support Tickets</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+            
+            
+            <!-- Amount of books rented per month chart -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Monthly Book Reports</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div id="morris-area-chart"><h1> Line Chart Here With Number Of Books Borrowed Per Month </h1></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+            
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Most Popular Books
+                        <select class="input-sm">
+                            <option>This Week</option>
+                            <option>This Month</option>
+                            <option>This Year</option>
+                            <option>All Time</option>
+                        </select>
+                    </h1>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <!-- Projects Row -->
+            <div class="row">
+                <div class="col-md-2 portfolio-item">
+                    <a href="#">
+                        <img class="img-responsive" src="../images/TestImg1.jpg" alt="">
+                    </a>
+                    <h3>
+                        <a href="#">Book Title here...</a>
+                    </h3>
+                    <h4>
+                        <a href="#">Book Author here...</a>
+                    </h4>
+                    <p>Book Description here...</p>
+                </div>
+                
+                <div class="col-md-2 portfolio-item">
+                    <a href="#">
+                        <img class="img-responsive" src="../images/TestImg2.jpg" alt="">
+                    </a>
+                    <h3>
+                        <a href="#">Book Title here...</a>
+                    </h3>
+                    <h4>
+                        <a href="#">Book Author here...</a>
+                    </h4>
+                    <p>Book Description here...</p>
+                </div>
+                
+                <div class="col-md-2 portfolio-item">
+                    <a href="#">
+                        <img class="img-responsive" src="../images/TestImg3.jpg" alt="">
+                    </a>
+                    <h3>
+                        <a href="#">Book Title here...</a>
+                    </h3>
+                    <h4>
+                        <a href="#">Book Author here...</a>
+                    </h4>
+                    <p>Book Description here...</p>
+                </div>
+                
+                <div class="col-md-2 portfolio-item">
+                    <a href="#">
+                        <img class="img-responsive" src="../images/TestImg4.jpg" alt="">
+                    </a>
+                    <h3>
+                        <a href="#">Book Title here...</a>
+                    </h3>
+                    <h4>
+                        <a href="#">Book Author here...</a>
+                    </h4>
+                    <p>Book Description here...</p>
+                </div>
+                
+                <div class="col-md-2 portfolio-item">
+                    <a href="#">
+                        <img class="img-responsive" src="../images/TestImg5.jpg" alt="">
+                    </a>
+                    <h3>
+                        <a href="#">Book Title here...</a>
+                    </h3>
+                    <h4>
+                        <a href="#">Book Author here...</a>
+                    </h4>
+                    <p>Book Description here...</p>
+                </div>
+                
+                <div class="col-md-2 portfolio-item">
+                    <a href="#">
+                        <img class="img-responsive" src="../images/TestImg6.jpg" alt="">
+                    </a>
+                    <h3>
+                        <a href="#">Book Title here...</a>
+                    </h3>
+                    <h4>
+                        <a href="#">Book Author here...</a>
+                    </h4>
+                    <p>Book Description here...</p>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Pagination -->
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#">&laquo;</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">1</a>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            <a href="#">3</a>
+                        </li>
+                        <li>
+                            <a href="#">4</a>
+                        </li>
+                        <li>
+                            <a href="#">5</a>
+                        </li>
+                        <li>
+                            <a href="#">&raquo;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Footer -->
+            <footer>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Copyright &copy; Elm Live-brary 2014</p>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </footer>
+
+    </div>
+    <!-- /.container -->
+        
+        <!-- jQuery Version 1.11.0 -->
+        <script src="../resources/js/jquery-2.1.1.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="../resources/js/bootstrap.min.js"></script>
+		<script>
+		var chart = c3.generate({
+			bindto: '#morris-area-chart',
+			data: {
+			x: 'x',
+			columns: [
+				['x', '2013-10-01', '2013-11-01', '2013-12-01', '2014-01-01', '2014-02-01', '2014-03-01', '2014-04-01', '2014-05-01', '2014-06-01', '2014-07-01', '2014-08-01', '2014-09-01'],
+				['pdf', 30, 20, 25, 40, 41, 15, 50, 45, 40, 35, 51, 12],
+				['epub', 80, 50, 60, 61, 57, 35, 50, 55, 70, 40, 55, 60],
+				['audiobook', 6, 10, 12, 10, 20, 31, 10, 10, 12, 15, 20, 10],
+			]
+			},
+			axis: {
+			 y: {
+				label: { 
+				text: 'Number Of Downloads',
+				position: 'outer-middle'
+				}
+			},
+			x: {
+				label: {
+				text: 'Month-Year',
+				positoin: 'outer-middle'
+				},
+				type: 'timeseries',
+				tick: {
+					format: '%m-%y'
+				}
+			}
+			}
+		});
+		
+		
+		</script>
+    </body>
+</html>

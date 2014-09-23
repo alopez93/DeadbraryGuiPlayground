@@ -4,26 +4,7 @@
 
     <head>
 
-        <style>
-            .yellow, .yellow .active a,
-            .yellow .active a:hover {
-                background-color: yellow !important;
-            }
-            
-            .green, .green .active a,
-            .green .active a:hover {
-                background-color: green !important;
-            }
-            
-            .red, .red .active a,
-            .red .active a:hover {
-                background-color: red !important;
-            }
-            
-            
-            
-            
-        </style>
+
         <title>User Settings</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,6 +15,51 @@
         <!-- Custom CSS -->
         <link href="../resources/css2/sb-admin.css" rel="stylesheet">
         <link href="../resources/css2/4-col-portfolio.css" rel="stylesheet">
+
+        <style>
+            .yellow, .yellow .active a,
+            .yellow .active a:hover {
+                color: yellow !important;
+            }
+
+            .green, .green .active a,
+            .green .active a:hover {
+                color: green !important;
+            }
+
+            .red, .red .active a,
+            .red .active a:hover {
+                color: red !important;
+            }
+
+            .brown, .brown .active a,
+            .brown .active a:hover {
+                color: saddlebrown !important;
+            }
+
+            .orange, .orange .active a,
+            .orange .active a:hover {
+                color: orange !important;
+            }
+
+            .purple, .purple .active a,
+            .purple .active a:hover {
+                color: purple !important;
+            }	
+
+            .row-centered {
+                text-align:center;
+            }
+            .col-centered {
+                display:inline-block;
+                float:none;
+                /* reset the text-align */
+                text-align:left;
+                /* inline-block space fix */
+                margin-right:-4px;
+            }
+
+        </style>
     </head>
     <body>
 
@@ -45,7 +71,7 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
-                        <span class="icon-bar"></span 
+                        <span class="icon-bar"></span>
                         <span class="icon-bar"> </span>
                     </button>
                     <a class="navbar-brand" href="index.html">Elm Live-brary</a>
@@ -85,162 +111,102 @@
         </div>
 
         <!-- Page Content -->
-
-        <div class="container">
-
-            <div class="tab-content col-md-10">
-                <div class="tab-pane active" id="tab_a">
-                    <h4>Bookshelf</h4>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-                        ac turpis egestas.</p>
-                </div>
-                <div class="tab-pane" id="tab_b">
-                    <h4>Lists</h4>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-                        ac turpis egestas.</p>
-                </div>
-                <div class="tab-pane" id="tab_c">
-                    <h4>Stuff</h4>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-                        ac turpis egestas.</p>
-                </div>
-                <div class="tab-pane" id="tab_d">
-                    <h4>Other Stuff</h4>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-                        ac turpis egestas.</p>
-                </div>
-            </div><!-- tab content -->
+        <div class="col-lg-12">
             <ul class="nav nav-pills nav-stacked col-md-2">
-                <li class="active"><a class="green" href="#tab_a" data-toggle="pill"> <p align="center"> <i class="fa fa-book fa-5x">  </i> <span style="font-size:200%;"> <br>Bookshelf </span> </p> </a></li>
-                <li>               <a href="#tab_b" data-toggle="pill"> <p align="center"> <i class="fa fa-tasks fa-5x"> </i> <span style="font-size:200%;"> <br>Lists   </span> </p> </a></li>
-                <li><a href="#tab_c" data-toggle="pill">Pill C</a></li>
-                <li><a href="#tab_d" data-toggle="pill">Pill D</a></li>
+                <li class="active"><a class="brown" href="#tab_a" data-toggle="pill"> <p align="center"> <i class="fa fa-book fa-5x">  </i> <span style="font-size:200%;"> <br>Bookshelf </span> </p> </a></li>
+                <li><a class="green" href="#tab_b" data-toggle="pill"> <p align="center"> <i class="fa fa-tasks fa-4x"> </i> <span style="font-size:200%;"> <br>Lists   </span> </p> </a></li>
+                <li><a class="red" href="#tab_c" data-toggle="pill"> <p align="center"> <i class="fa fa-pause fa-4x"> </i> <span style="font-size:200%;"> <br>Holds   </span> </p> </a></li>
+                <li><a class="blue" href="#tab_d" data-toggle="pill"> <p align="center"> <i class="fa fa-info-circle fa-4x"> </i> <span style="font-size:200%;"> <br>Information </span> </p> </a></li>
             </ul>
-        </div>
+            <div class="container">
+
+                <div class="tab-content col-md-10">
+                    <div class="tab-pane active" id="tab_a">
+                                                
+                        <div class="container">
+                            <center><h1 class="page-header">Bookshelf</h1></center>
+                            <div class="row row-centered">
+                                <div class="col-md-3 col-centered portfolio-item">
+                                    <a href="#">
+                                        <img class="img-responsive" src="../images/TestImg1.jpg" alt="">
+                                    </a>
+                                    <h3>
+                                        <a href="#">A Brief History Of Time</a>
+                                    </h3>
+                                    <h4>
+                                        <a href="#">Stephen Hawking</a>
+                                    </h4>
+                                    <p>Time is pretty brief.</p>
+                                </div>                    
+
+
+                                <div class="col-md-3 col-centered portfolio-item">
+                                    <a href="#">
+                                        <img class="img-responsive" src="../images/TestImg3.jpg" alt="">
+                                    </a>
+                                    <h3>
+                                        <a href="#">Game of Thrones</a>
+                                    </h3>
+                                    <h4>
+                                        <a href="#">George R.R. Martin</a>
+                                    </h4>
+                                    <p>Winter is coming. Bitch.</p>
+                                </div>
+                            </div>
+                            <div class="row-centered">
+                                <div class="col-md-3 col-centered portfolio-item">
+                                    <a href="#">
+                                        <img class="img-responsive" src="../images/TestImg4.jpg" alt="">
+                                    </a>
+                                    <h3>
+                                        <a href="#">Harry Pooter And The Sorcerer's Blunt</a>
+                                    </h3>
+                                    <h4>
+                                        <a href="#">J.K. Rowling</a>
+                                    </h4>
+                                    <p>Meeyan</p>
+                                </div>
 
 
 
-        <div class="container">
+                                <div class="col-md-3 col-centered portfolio-item">
+                                    <a href="#">
+                                        <img class="img-responsive" src="../images/TestImg6.jpg" alt="">
+                                    </a>
+                                    <h3>
+                                        <a href="#">A People's History Of The United States</a>
+                                    </h3>
+                                    <h4>
+                                        <a href="#">Howard Zinn</a>
+                                    </h4>
+                                    <p>ZZZzzzZZZ</p>
+                                </div>
 
-            <div id="dashboard">
-
-                <div class="container-fluid">
-
-                    <!-- Page Heading -->
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h1 class="page-header">
-                                Dashboard
-                            </h1>
+                            </div>
                         </div>
                     </div>
-                    <!-- /.row -->
-
-                    <div class="row">
-                        <a href="add_book.html">
-                            <div class="col-lg-3 col-md-6">
-                                <div class="panel panel-primary">
-                                    <div class="panel-heading">
-                                        <div class="row">
-                                            <div class="col-xs-3">
-                                                <i class="fa fa-book fa-5x"></i>
-                                            </div>
-                                            <div class="col-xs-9 text-right">
-                                                <div>Add A Book</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="search.html">
-                            <div class="col-lg-3 col-md-6">
-                                <div class="panel panel-green">
-                                    <div class="panel-heading">
-                                        <div class="row">
-                                            <div class="col-xs-3">
-                                                <i class="fa fa-tasks fa-5x"></i>
-                                            </div>
-                                            <div class="col-xs-9 text-right">
-                                                <div>Search Books</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="users.html">
-                            <div class="col-lg-3 col-md-6">
-                                <div class="panel panel-primary">
-                                    <div class="panel-heading">
-                                        <div class="row">
-                                            <div class="col-xs-3">
-                                                <i class="fa fa-users fa-5x"></i>
-                                            </div>
-                                            <div class="col-xs-9 text-right">
-                                                <div>Manage Users</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="support.html">
-                            <div class="col-lg-3 col-md-6">
-                                <div class="panel panel-yellow">
-                                    <div class="panel-heading">
-                                        <div class="row">
-                                            <div class="col-xs-3">
-                                                <i class="fa fa-support fa-5x"></i>
-                                            </div>
-                                            <div class="col-xs-9 text-right">
-                                                <div>Support Tickets</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                    <div class="tab-pane" id="tab_b">
+                        <center><h1>Lists</h1></center>
+                        <p>Are nice... to commence tomorrow</p>
                     </div>
-
-                </div>
+                    <div class="tab-pane" id="tab_c">
+                        <div class="container">
+                            <center><h1 class="page-header">Holds</h1></center>
+                            <p>Hold up, this song sucks... this page will be done soon</p>
+                            <iframe width="560" height="315" src="//www.youtube.com/embed/UX6K7waag5Q" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab_d">
+                        <h4>Information</h4>
+                        <p>We don't have any information about you yet, you must be pretty boring.</p>
+                    </div>
+                </div><!-- tab content -->
 
             </div>
 
-
-            <!-- Amount of books rented per month chart -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Monthly Book Reports</h3>
-                        </div>
-                        <div class="panel-body">
-                            <div id="morris-area-chart"><h1> Line Chart Here With Number Of Books Borrowed Per Month </h1></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /.row -->
-
-
-
-
-
-            <hr>
-
-            <!-- Footer -->
-            <footer>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p>Copyright &copy; Elm Live-brary 2014</p>
-                    </div>
-                </div>
-                <!-- /.row -->
-            </footer>
-
         </div>
-        <!-- /.container -->
+
+
 
         <!-- jQuery Version 1.11.0 -->
         <script src="../resources/js/jquery-2.1.1.js"></script>
