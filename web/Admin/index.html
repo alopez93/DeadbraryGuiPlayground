@@ -12,6 +12,13 @@
         <!-- Custom CSS -->
         <link href="../resources/css2/sb-admin.css" rel="stylesheet">
         <link href="../resources/css2/4-col-portfolio.css" rel="stylesheet">
+		
+		<!--C3 CSS -->
+		<link href = "../resources/css/c3.min.css" rel="stylesheet">
+		
+		<!---JavaScript--->
+		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<script src = "../resources/js/c3.min.js"></script>
     </head>
     <body>
         
@@ -303,5 +310,29 @@
 
         <!-- Bootstrap Core JavaScript -->
         <script src="../resources/js/bootstrap.min.js"></script>
+		<script>
+		var chart = c3.generate({
+			bindto: '#morris-area-chart',
+			data: {
+			x: 'x',
+			columns: [
+				['x', '2013-10-01', '2013-11-01', '2013-12-01', '2014-01-01', '2014-02-01', '2014-03-01', '2014-04-01', '2014-05-01', '2014-06-01', '2014-07-01', '2014-08-01', '2014-09-01'],
+				['pdf', 30, 20, 25, 40, 41, 15, 50, 45, 40, 35, 51, 12],
+				['epub', 80, 50, 60, 61, 57, 35, 50, 55, 70, 40, 55, 60],
+				['audiobook', 6, 10, 12, 10, 20, 31, 10, 10, 12, 15, 20, 10],
+			]
+			},
+			axis: {
+			x: {
+				type: 'timeseries',
+				tick: {
+					format: '%m-%y'
+				}
+			}
+			}
+		});
+		
+		
+		</script>
     </body>
 </html>
