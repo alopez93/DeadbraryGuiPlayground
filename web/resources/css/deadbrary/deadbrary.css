@@ -1,10 +1,23 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+/**
+* Reference fonts
 */
-/* 
-    Created on : Sep 24, 2014, 6:58:02 PM
-    Author     : francis
+@font-face {
+    font-family: 'wolf in the city';
+    src: url('../../fonts/wolf in the city/wolf in the city.woff') format('woff'), url('../fonts/brankovic/brankovic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'brankovic';
+    src: url('../../fonts/brankovic/brankovic.woff') format('woff'), url('../fonts/brankovic/brankovic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'chunkfive ex';
+    src: url('../../fonts/chunkfive ex/chunkfive ex.woff') format('woff'), url('../fonts/chunkfive ex/chunkfive ex.ttf') format('truetype');
+}
+/**
+* Apply fonts
 */
-
+.navbar-inverse .navbar-brand {
+    font-family: "brankovic", sans-serif;
+    font-size: 200%;
+    color: red;
+}
