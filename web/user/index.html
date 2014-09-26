@@ -16,6 +16,8 @@
         <link href="../resources/css/startbootstrap/sb-admin.css" rel="stylesheet">
         <link href="../resources/css/startbootstrap/4-col-portfolio.css" rel="stylesheet">
         <link href="../resources/css/deadbrary/deadbrary.css" rel="stylesheet">
+        <link rel="icon" href="../resources/img/icon.png" type="image/png"  /> 
+        <link rel="shortcut icon" href="../resources/img/icon.png" type="image/png" />
 
     </head>
     <body>
@@ -150,7 +152,7 @@
 
                             <div id="accordion" class="panel-group">
                                 <div class="panel panel-inverse">
-                                    <div class="panel-heading">
+                                    <div data-toggle="collapse" data-target="#collapseOne" class="panel-heading">
                                         <h4 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Waitlist</a>
                                         </h4>
@@ -228,7 +230,7 @@
 
 
                                 <div class="panel panel-inverse">
-                                    <div class="panel-heading">
+                                    <div data-toggle="collapse" data-target="#collapseTwo" class="panel-heading">
                                         <h4 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Rated Titles</a>
                                         </h4>
@@ -243,7 +245,7 @@
                                 </div>
 
                                 <div class="panel panel-inverse">
-                                    <div class="panel-heading">
+                                    <div data-toggle="collapse" data-target="#collapseThree" class="panel-heading">
                                         <h4 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Recommended for you</a>
                                         </h4>
@@ -258,7 +260,7 @@
                                 </div>
 
                                 <div class="panel panel-inverse">
-                                    <div class="panel-heading">
+                                    <div data-toggle="collapse" data-target="#collapseFour" class="panel-heading">
                                         <h4 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Titles you recommend</a>
                                         </h4>
@@ -517,7 +519,9 @@
                 // Center modal vertically in window
                 $dialog.css("margin-top", offset);
             }
-
+            
+            //$("#collapseOne").removeClass("in");
+            //$("#collapseFour").addClass("in");
 
         </script>
 
