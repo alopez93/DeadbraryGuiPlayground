@@ -25,38 +25,56 @@
 * User settings page mods
 */
 .yellow, .yellow .active a,
-            .yellow .active a:hover {
-                color: yellow !important;
-            }
+.yellow .active a:hover {
+    color: yellow !important;
+}
 
-            .green, .green .active a,
-            .green .active a:hover {
-                color: green !important;
-            }
+.green, .green .active a,
+.green .active a:hover {
+    color: green !important;
+}
 
-            .red, .red .active a,
-            .red .active a:hover {
-                color: red !important;
-            }
+.red, .red .active a,
+.red .active a:hover {
+    color: red !important;
+}
 
-            .brown, .brown .active a,
-            .brown .active a:hover {
-                color: saddlebrown !important;
-            }
+.brown, .brown .active a,
+.brown .active a:hover {
+    color: saddlebrown !important;
+}
 
-            .blue, .blue .active a,
-            .blue .active a:hover {
-                color: blue !important;
-            }
+.blue, .blue .active a,
+.blue .active a:hover {
+    color: blue !important;
+}
 
-            .row-centered {
-                text-align:center;
-            }
-            .col-centered {
-                display:inline-block;
-                float:none;
-                /* reset the text-align */
-                text-align:left;
-                /* inline-block space fix */
-                margin-right:-4px;
-            }
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+/**
+* Dark Panels
+*/
+.panel-inverse {
+  border-color: #080808; //#080808 //#222
+}
+.panel-inverse > .panel-heading {
+  color: #FFFFFF;
+  background-color: #222;
+  border-color: #080808;
+}
+.panel-inverse > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #080808;
+}
+.panel-inverse > .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: #080808;
+}
