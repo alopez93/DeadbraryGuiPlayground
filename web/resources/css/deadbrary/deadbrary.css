@@ -21,3 +21,42 @@
     font-size: 200%;
     color: red;
 }
+/**
+* User settings page mods
+*/
+.yellow, .yellow .active a,
+            .yellow .active a:hover {
+                color: yellow !important;
+            }
+
+            .green, .green .active a,
+            .green .active a:hover {
+                color: green !important;
+            }
+
+            .red, .red .active a,
+            .red .active a:hover {
+                color: red !important;
+            }
+
+            .brown, .brown .active a,
+            .brown .active a:hover {
+                color: saddlebrown !important;
+            }
+
+            .blue, .blue .active a,
+            .blue .active a:hover {
+                color: blue !important;
+            }
+
+            .row-centered {
+                text-align:center;
+            }
+            .col-centered {
+                display:inline-block;
+                float:none;
+                /* reset the text-align */
+                text-align:left;
+                /* inline-block space fix */
+                margin-right:-4px;
+            }

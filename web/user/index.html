@@ -17,51 +17,6 @@
         <link href="../resources/css/startbootstrap/4-col-portfolio.css" rel="stylesheet">
         <link href="../resources/css/deadbrary/deadbrary.css" rel="stylesheet">
 
-        <style>
-
-            .yellow, .yellow .active a,
-            .yellow .active a:hover {
-                color: yellow !important;
-            }
-
-            .green, .green .active a,
-            .green .active a:hover {
-                color: green !important;
-            }
-
-            .red, .red .active a,
-            .red .active a:hover {
-                color: red !important;
-            }
-
-            .brown, .brown .active a,
-            .brown .active a:hover {
-                color: saddlebrown !important;
-            }
-
-            .blue, .blue .active a,
-            .blue .active a:hover {
-                color: blue !important;
-            }
-
-            .row-centered {
-                text-align:center;
-            }
-            .col-centered {
-                display:inline-block;
-                float:none;
-                /* reset the text-align */
-                text-align:left;
-                /* inline-block space fix */
-                margin-right:-4px;
-            }
-            
-            .nav-pills > .active > a, .nav-pills > .active > a:hover {
-                background-color: pink;
-            }
-            
-
-        </style>
     </head>
     <body>
 
@@ -76,12 +31,12 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"> </span>
                     </button>
-                    <a class="navbar-brand" href="index.html">Deadbrary</a>
+                    <a class="navbar-brand" href="../index.html">Deadbrary</a>
                 </div>
                 <!-- Top Menu Items -->
                 <ul class="nav navbar-right top-nav">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Rick James <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="#"><i class="fa fa-fw fa-user"></i> Account</a>
@@ -255,10 +210,10 @@
                                     <br>
                                     <!-- Text input-->
                                     <div class="form-group">
-                                            
+
                                         <label class="col-md-4 control-label" for="LibraryCardNumber">Library Card Number:</label>  
                                         <div class="col-md-4">
-                                            <input id="LibraryCardNumber" name="LibraryCardNumber" type="text" placeholder="Ex: 123456789" class="form-control input-md">
+                                            <input id="LibraryCardNumber" name="LibraryCardNumber" type="text" placeholder="Ex: 123456789" class="form-control input-md" disabled="disabled">
 
                                         </div>
                                     </div>
@@ -266,7 +221,7 @@
                                     <div class="form-group">
                                         <label class="col-md-4 control-label" for="Username">Username:</label>  
                                         <div class="col-md-4">
-                                            <input id="Username" name="Username" type="text" placeholder="Ex: baconman4" class="form-control input-md">
+                                            <input id="Username" name="Username" type="text" placeholder="Ex: baconman4" class="form-control input-md" disabled="disabled">
 
                                         </div>
                                     </div>
@@ -274,13 +229,23 @@
                                     <div class="form-group">
                                         <label class="col-md-4 control-label" for="Password">Password:</label>
                                         <div class="col-md-4">
-                                            <input id="Password" name="Password" type="password" placeholder="password" class="form-control input-md">
+                                            <input id="Password" name="Password" type="password" placeholder="password" class="form-control input-md" disabled="disabled">
                                         </div>
-                                    </div>                                    
+                                        
+                                         
+                                          
+
+                                    </div>     
                                     
+                                    <div align="center" class="form-group">                                        
+                                          <!--<p style="font-size:large;">--> 
+                                        <a class="btn btn-info" role="button" href="javascript.void(0);" data-toggle="modal" data-target="#settings-modal">Edit Settings</a> 
+                                          <!--</p>--> 
+                                    </div>
+
                                 </fieldset>
                             </form>
-                            
+
                         </div>
                     </div>
                 </div><!-- tab content -->
@@ -289,20 +254,138 @@
 
         </div>
 
+        <!--<div id="page-wrapper">-->
+            <div id="settings-modal" class="modal fade settings-modal" tabindex="-1" role="dialog" aria-labelledby="bootstrapLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Settings</h4>
+                        </div>
+                        <div class="modal-body">
+
+                            <form role="form" class="form-horizontal" data-toggle="validator">
+                                <fieldset>
+                                    <!--<legend>User Settings</legend>-->
+
+
+                                    <!-- Text input-->
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label" for="libraryCardNumberInput">Library Card Number: </label>
+                                        <div class="col-sm-9">
+                                            <input id="libraryCardNumberInput" name="libraryCardNumberInput" type="number" placeholder="123456789" class="form-control" disabled="disabled">
+                                        </div>
+                                    </div>
+
+                                    <!-- Text input-->
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label" for="userNameInput">Username:</label>
+                                        <div class="col-sm-9">
+                                            <input id="userNameInput" name="userNameInput" type="text" placeholder="SampleUsername" class="form-control">
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="form-group">                                        
+                                        <label class="col-sm-2 control-label" for="passwordInput">Password: </label>
+                                        <div class="col-sm-9">
+
+                                            <input id="passwordInput" name="passwordInput" type="password" placeholder="samplePassword" class="form-control">
+                                        </div>
+                                    </div> 
+
+                                    <div class="form-group">                                     
+                                        <label class="col-sm-2 control-label" for="passwordConfirmInput">Confirm Password: </label>
+                                        <div class="col-sm-9">
+                                            <input id="passwordConfirmInput" name="passwordConfirmInput" 
+                                                   type="password" placeholder="samplePassword" class="form-control" data-match="#passwordInput" data-match-error="Passwords don't match">
+                                        </div>
+                                        <br>
+                                        <div class="help-block with-errors"></div> <!-- @TODO FIX POSITION OF ERROR BLOCK -->
+
+                                    </div>
+
+
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary"><i class="fa fa-save"></i> Save Settings</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!--</div> -->
+
 
         <!-- jQuery Version 1.11.0 -->
         <script src="../resources/js/jquery-2.1.1.js"></script>
 
         <!-- Bootstrap Core JavaScript -->
         <script src="../resources/js/bootstrap.min.js"></script>
-        
-        
+        <script src="../resources/js/validator.min.js"></script>
+
+              
         <script>
-              $("#LibraryCardNumber").val("856241379");     
-            $("#Username").val("RickJames815");            
+            
+            $("#LibraryCardNumber").val("856241379");
+            $("#Username").val("RickJames815");
             $("#Password").val("Qazwsx1234");
+
+            $("#libraryCardNumberInput").val("856241379");
+            $("#userNameInput").val("RickJames815");
+            $("#passwordInput").val("Qazwsx1234");
+            $("#passwordConfirmInput").val("Qazwsx1234");
+
+            if (getUrlParameter("settings") == "true")
+            {
+                $(".nav.nav-pills li:first").removeClass("active");
+                $("#tab_a").removeClass("active");
+                $(".nav.nav-pills li:last").addClass("active");
+                $("#tab_d").addClass("active");
+                //var liToSelect = 4;
+                //$(".nav.nav-pills li:eq(" + (liToSelect - 1) + ")").addClass("active");                
+                //$(".nav.nav-pills li").on("click", function() {
+                //$(".nav.nav-pills li").removeClass("active");
+                //$(this).addClass("active");
+                //});
+            }
+            
+            $('.modal').on('show.bs.modal', centerModal);
+            $(window).on("resize", function() {
+                $('.modal:visible').each(centerModal);
+            });
+          
+            function getUrlParameter(sParam)
+            {
+                var sPageURL = window.location.search.substring(1);
+                var sURLVariables = sPageURL.split('&');
+                for (var i = 0; i < sURLVariables.length; i++)
+                {
+                    var sParameterName = sURLVariables[i].split('=');
+                    if (sParameterName[0] == sParam)
+                    {
+                        return sParameterName[1];
+                    }
+                }
+            }
+
+            function centerModal() {
+                $(this).css('display', 'block');
+                var $dialog = $(this).find(".modal-dialog");
+                var offset = ($(window).height() - $dialog.height()) / 2;
+                // Center modal vertically in window
+                $dialog.css("margin-top", offset);
+            }
+                      
+
         </script>
         
-        
+
+
     </body>
 </html>
