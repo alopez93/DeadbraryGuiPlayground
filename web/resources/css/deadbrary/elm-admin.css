@@ -1,0 +1,17 @@
+.navbar-admin{
+    background-color:#A62121;
+    border-color:#FF6B6B;
+}
+
+.navbar-admin-brand{
+    color: #FFFFFF;
+    float:left;
+    padding:15px;
+    font-size:18px;
+    line-height:20px;
+    height:50px
+}
+
+.navbar-side-color{
+    color: #FFFFFF;
+}
