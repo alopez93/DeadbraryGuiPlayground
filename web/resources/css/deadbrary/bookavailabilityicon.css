@@ -15,6 +15,11 @@
   right: 5px;
 }
 
+.fixed-book-image-size {
+    height: 315px; 
+    width: 225px;
+}
+
 .icon-color-black {
     color: black;
 }
