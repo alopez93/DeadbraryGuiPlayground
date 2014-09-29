@@ -20,7 +20,20 @@
         <!--Site Icon-->
         <link rel="icon" href="../resources/img/icon.png" type="image/png"  /> 
         <link rel="shortcut icon" href="../resources/img/icon.png" type="image/png" />
-
+        <style>
+            .book-control
+            {
+                //background:rgba(50,100,100,0.3);                
+                //height:120%;
+                background-color:rgba(0, 100, 255, 0.4);
+               // background: linear-gradient(180deg, whitesmoke, rgba(0, 100, 255,0.3));
+            }
+            .book-control-unavailable
+            {
+                background: linear-gradient(180deg, whitesmoke, rgba(0, 100, 255,0.3));
+                opacity: 0.4;
+            }
+        </style>
     </head>
     <body>
 
@@ -94,7 +107,9 @@
                         <div class="container">
                             <center><h1 class="page-header">Bookshelf</h1></center>
                             <div class="row row-centered">
-                                <div class="col-md-3 col-centered portfolio-item">
+                               
+                                
+                                <div class="col-md-3 col-centered portfolio-item book-control">
                                     <a href="#">
                                         <img class="img-responsive" src="../resources/img/TestImg1.jpg" alt="">
                                     </a>
@@ -106,13 +121,13 @@
                                     </h4>
                                     <p>Description Pending...</p>
                                     <div align="center" >
-                                        <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                        <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" data-star-captions="{}">
                                         <button class="btn btn-danger">Return</button>
                                     </div>
                                 </div>                    
+                                
 
-
-                                <div class="col-md-3 col-centered portfolio-item">
+                                <div class="col-md-3 col-md-offset-1 col-centered portfolio-item book-control">
                                     <a href="#">
                                         <img class="img-responsive" src="../resources/img/TestImg3.jpg" alt="">
                                     </a>
@@ -124,7 +139,7 @@
                                     </h4>
                                     <p>Description Pending...</p>
                                     <div align="center" >
-                                        <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                        <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" data-star-captions="{}">
                                         <button class="btn btn-danger">Return</button>
                                     </div>
                                 </div>
@@ -142,14 +157,14 @@
                                     </h4>
                                     <p>Description Pending...</p>
                                     <div align="center" >
-                                        <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                        <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" data-star-captions="{}">
                                         <button class="btn btn-danger">Return</button>
                                     </div>
                                 </div>
 
 
 
-                                <div class="col-md-3 col-centered portfolio-item">
+                                <div class="col-md-3 col-md-offset-1 col-centered portfolio-item">
                                     <a href="#">
                                         <img class="img-responsive" src="../resources/img/TestImg6.jpg" alt="">
                                     </a>
@@ -161,7 +176,7 @@
                                     </h4>
                                     <p>Description Pending...</p>
                                     <div align="center" >
-                                        <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                        <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" data-star-captions="{}">
                                         <button class="btn btn-danger">Return</button>
                                     </div>
                                 </div>
@@ -176,7 +191,7 @@
                             <center><h1 class="page-header">Lists</h1></center>
 
                             <div id="accordion" class="panel-group">
-                                <div class="panel panel-inverse">
+                                <div class="panel panel-primary">
                                     <div data-toggle="collapse" data-target="#collapseOne" class="panel-heading">
                                         <h4 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Waitlist</a>
@@ -189,7 +204,7 @@
                                             <div class="container">
                                                 <center><h3 class="page-header">Books you want to borrow</h3></center>
                                                 <div class="row row-centered">
-                                                    
+
                                                     <div class="col-md-3 col-centered portfolio-item">
                                                         <a href="#">
                                                             <img class="img-responsive" src="../resources/img/TestImg1.jpg" alt="">
@@ -202,7 +217,7 @@
                                                         </h4>
                                                         <p>Description Pending...</p>
                                                         <div align="center">
-                                                            <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                            <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" data-star-captions="{}">
                                                             <button class="btn btn-info">Borrow</button>
                                                         </div>
                                                     </div>                    
@@ -220,12 +235,12 @@
                                                         </h4>
                                                         <p>Description Pending...</p>
                                                         <div align="center">
-                                                            <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                            <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" data-star-captions="{}">
                                                             <button class="btn btn-info">Borrow</button>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                
+
                                                 <div class="row-centered">
                                                     <div class="col-md-3 col-centered portfolio-item">
                                                         <a href="#">
@@ -239,7 +254,7 @@
                                                         </h4>
                                                         <p>Description Pending...</p>
                                                         <div align="center" >
-                                                            <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                            <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" data-star-captions="{}">
                                                             <button class="btn btn-info" disabled='disabled'>Borrow</button>
                                                         </div>
                                                     </div>
@@ -258,7 +273,7 @@
                                                         </h4>
                                                         <p>Description pending...</p>
                                                         <div align="center" >
-                                                            <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                            <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" data-star-captions="{}">
                                                             <button class="btn btn-info">Borrow</button>
                                                         </div>
                                                     </div>
@@ -272,7 +287,7 @@
                                 </div>
 
 
-                                <div class="panel panel-inverse">
+                                <div class="panel panel-primary">
                                     <div data-toggle="collapse" data-target="#collapseTwo" class="panel-heading">
                                         <h4 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Rated Titles</a>
@@ -287,7 +302,7 @@
                                     </div>       
                                 </div>
 
-                                <div class="panel panel-inverse">
+                                <div class="panel panel-primary">
                                     <div data-toggle="collapse" data-target="#collapseThree" class="panel-heading">
                                         <h4 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Recommended for you</a>
@@ -302,7 +317,7 @@
                                     </div>       
                                 </div>
 
-                                <div class="panel panel-inverse">
+                                <div class="panel panel-primary">
                                     <div data-toggle="collapse" data-target="#collapseFour" class="panel-heading">
                                         <h4 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Titles you recommend</a>
@@ -343,7 +358,7 @@
                                     </h4>
                                     <p>Description pending...</p>
                                     <div align="center" >
-                                        <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                        <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" data-star-captions="{}">
                                         <button class="btn btn-danger">Return</button>
                                     </div>
                                 </div>                    
@@ -361,7 +376,7 @@
                                     </h4>
                                     <p>Description pending...</p>
                                     <div align="center" >
-                                        <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                        <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" data-star-captions="{}">
                                         <button class="btn btn-danger">Return</button>
                                     </div>
                                 </div>
@@ -379,7 +394,7 @@
                                     </h4>
                                     <p>Description pending...</p>
                                     <div align="center">
-                                        <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                        <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" data-star-captions="{}">
                                         <button class="btn btn-danger">Return</button>
                                     </div>
                                 </div>
@@ -494,9 +509,9 @@
                                     <div class="col-sm-9">
                                         <input id="passwordConfirmInput" name="passwordConfirmInput" 
                                                type="password" placeholder="samplePassword" class="form-control" data-match="#passwordInput" data-match-error="Passwords don't match">
+                                        <div class="help-block with-errors"></div> 
                                     </div>
-                                    <br>
-                                    <div class="help-block with-errors"></div> <!-- @TODO FIX POSITION OF ERROR BLOCK -->
+
 
                                 </div>
 
@@ -515,7 +530,7 @@
         <!--</div> -->
 
 
-        <!-- jQuery Version 1.11.0 -->
+        <!-- jQuery Version 2.1.1 -->
         <script src="../resources/js/jquery-2.1.1.js"></script>
 
         <!-- Bootstrap Core JavaScript -->
