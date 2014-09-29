@@ -16,65 +16,67 @@
         <link href="../resources/css/startbootstrap/sb-admin.css" rel="stylesheet">
         <link href="../resources/css/startbootstrap/col-portfolio.css" rel="stylesheet">
         <link href="../resources/css/deadbrary/deadbrary.css" rel="stylesheet">
+        <link href="../resources/css/bootstrap-star-rating/star-rating.css" rel="stylesheet">
+        <!--Site Icon-->
         <link rel="icon" href="../resources/img/icon.png" type="image/png"  /> 
         <link rel="shortcut icon" href="../resources/img/icon.png" type="image/png" />
 
     </head>
     <body>
 
-       <!-- Navigation -->
-            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header navbar-form">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="./homepage.html">Deadbrary</a>
-                </div>
-                <!-- Top Menu Items -->
-                <ul class="nav navbar-right navbar-form top-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="./index.html?settings=true"><i class="fa fa-fw fa-user"></i> Account</a>
-                            </li>
-                            <li>
-                                <a href="./index.html"><i class="fa fa-book"></i> Bookshelf</a>
-                            </li>
-                            <li>
-                                <a href="./index.html?settings=true"><i class="fa fa-fw fa-gear"></i> Settings</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="navbar-left col-lg-9">
-                    <form class="navbar-form" action="../search.html" role="search">
-                        <fieldset>
-                                <div class="form-group">
-                                    <input type="search" class="form-control input-lg" placeholder="Search books...">
-                                    <select class="form-control input-lg">
-                                        <option>All Book Formats</option>
-                                        <option>ePub</option>
-                                        <option>Kindle</option>
-                                        <option>Audio</option>
-                                    </select>
-                                    <button type="submit" class="btn btn-default btn-lg"><i class="fa fa-search"></i> Search</button>
-                                    <div>
-                                        <a href="../search.html">Advanced Search</a>
-                                    </div>
-                                </div>
-                        </fieldset>
-                    </form>
-                </div>
-            </nav>  
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header navbar-form">
+                <button type="button" class="navbar-toggle" data-toggle="collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./homepage.html">Deadbrary</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right navbar-form top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="./index.html?settings=true"><i class="fa fa-fw fa-user"></i> Account</a>
+                        </li>
+                        <li>
+                            <a href="./index.html"><i class="fa fa-book"></i> Bookshelf</a>
+                        </li>
+                        <li>
+                            <a href="./index.html?settings=true"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="navbar-left col-lg-9">
+                <form class="navbar-form" action="../search.html" role="search">
+                    <fieldset>
+                        <div class="form-group">
+                            <input type="search" class="form-control input-lg" placeholder="Search books...">
+                            <select class="form-control input-lg">
+                                <option>All Book Formats</option>
+                                <option>ePub</option>
+                                <option>Kindle</option>
+                                <option>Audio</option>
+                            </select>
+                            <button type="submit" class="btn btn-default btn-lg"><i class="fa fa-search"></i> Search</button>
+                            <div>
+                                <a href="../search.html">Advanced Search</a>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </nav>  
 
         <!-- Page Content -->
         <div class="col-lg-12">
@@ -103,6 +105,10 @@
                                         <a href="#">Stephen Hawking</a>
                                     </h4>
                                     <p>Description Pending...</p>
+                                    <div align="center" >
+                                        <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                        <button class="btn btn-danger">Return</button>
+                                    </div>
                                 </div>                    
 
 
@@ -117,6 +123,10 @@
                                         <a href="#">George R.R. Martin</a>
                                     </h4>
                                     <p>Description Pending...</p>
+                                    <div align="center" >
+                                        <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                        <button class="btn btn-danger">Return</button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-centered">
@@ -131,6 +141,10 @@
                                         <a href="#">J.K. Rowling</a>
                                     </h4>
                                     <p>Description Pending...</p>
+                                    <div align="center" >
+                                        <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                        <button class="btn btn-danger">Return</button>
+                                    </div>
                                 </div>
 
 
@@ -146,6 +160,10 @@
                                         <a href="#">Howard Zinn</a>
                                     </h4>
                                     <p>Description Pending...</p>
+                                    <div align="center" >
+                                        <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                        <button class="btn btn-danger">Return</button>
+                                    </div>
                                 </div>
 
                             </div>
@@ -171,6 +189,7 @@
                                             <div class="container">
                                                 <center><h3 class="page-header">Books you want to borrow</h3></center>
                                                 <div class="row row-centered">
+                                                    
                                                     <div class="col-md-3 col-centered portfolio-item">
                                                         <a href="#">
                                                             <img class="img-responsive" src="../resources/img/TestImg1.jpg" alt="">
@@ -182,6 +201,10 @@
                                                             <a href="#">Stephen Hawking</a>
                                                         </h4>
                                                         <p>Description Pending...</p>
+                                                        <div align="center">
+                                                            <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                            <button class="btn btn-info">Borrow</button>
+                                                        </div>
                                                     </div>                    
 
 
@@ -196,8 +219,13 @@
                                                             <a href="#">George R.R. Martin</a>
                                                         </h4>
                                                         <p>Description Pending...</p>
+                                                        <div align="center">
+                                                            <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                            <button class="btn btn-info">Borrow</button>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                
                                                 <div class="row-centered">
                                                     <div class="col-md-3 col-centered portfolio-item">
                                                         <a href="#">
@@ -210,6 +238,10 @@
                                                             <a href="#">J.K. Rowling</a>
                                                         </h4>
                                                         <p>Description Pending...</p>
+                                                        <div align="center" >
+                                                            <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                            <button class="btn btn-info" disabled='disabled'>Borrow</button>
+                                                        </div>
                                                     </div>
 
 
@@ -224,7 +256,11 @@
                                                         <h4>
                                                             <a href="#">Howard Zinn</a>
                                                         </h4>
-                                                        <p>ZZZzzzZZZ</p>
+                                                        <p>Description pending...</p>
+                                                        <div align="center" >
+                                                            <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                            <button class="btn btn-info">Borrow</button>
+                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -245,7 +281,7 @@
                                     <div id="collapseTwo" class="panel-collapse collapse">
                                         <div class="panel-body">
 
-                                            <p>TODO</p>
+                                            <div class="alert alert-info" role="alert">You haven't rated any titles yet.</div>
 
                                         </div>
                                     </div>       
@@ -260,7 +296,7 @@
                                     <div id="collapseThree" class="panel-collapse collapse">
                                         <div class="panel-body">
 
-                                            <p>TODO</p>
+                                            <div class="alert alert-info" role="alert">No titles recommended for you, start rating books!</div>
 
                                         </div>
                                     </div>       
@@ -275,7 +311,7 @@
                                     <div id="collapseFour" class="panel-collapse collapse">
                                         <div class="panel-body">
 
-                                            <p>TODO</p>
+                                            <div class="alert alert-info" role="alert">Titles you have recommended will show up here.</div>
 
                                         </div>
                                     </div>       
@@ -293,7 +329,7 @@
 
 
                         <div class="container">
-                            <center><h1 class="page-header">Holds // TODO ADD ACTION BUTTONS TO BOOKS</h1></center>
+                            <center><h1 class="page-header">Holds</h1></center>
                             <div class="row row-centered">
                                 <div class="col-md-3 col-centered portfolio-item">
                                     <a href="#">
@@ -306,6 +342,10 @@
                                         <a href="#">Janet Evanovich</a>
                                     </h4>
                                     <p>Description pending...</p>
+                                    <div align="center" >
+                                        <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                        <button class="btn btn-danger">Return</button>
+                                    </div>
                                 </div>                    
 
 
@@ -320,6 +360,10 @@
                                         <a href="#">John Green</a>
                                     </h4>
                                     <p>Description pending...</p>
+                                    <div align="center" >
+                                        <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                        <button class="btn btn-danger">Return</button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row-centered">
@@ -334,6 +378,10 @@
                                         <a href="#">Jennifer Dubois</a>
                                     </h4>
                                     <p>Description pending...</p>
+                                    <div align="center">
+                                        <input id="input-21b" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                        <button class="btn btn-danger">Return</button>
+                                    </div>
                                 </div>
 
                             </div>
@@ -472,8 +520,10 @@
 
         <!-- Bootstrap Core JavaScript -->
         <script src="../resources/js/bootstrap.min.js"></script>
+
         <script src="../resources/js/validator.min.js"></script>
 
+        <script src="../resources/js/star-rating.min.js"></script>
 
         <script>
 
@@ -501,7 +551,7 @@
             }
 
             $('.modal').on('show.bs.modal', centerModal);
-            $(window).on("resize", function() {
+            $(window).on("resize", function () {
                 $('.modal:visible').each(centerModal);
             });
 
@@ -526,7 +576,7 @@
                 // Center modal vertically in window
                 $dialog.css("margin-top", offset);
             }
-            
+
             //$("#collapseOne").removeClass("in");
             //$("#collapseFour").addClass("in");
 
