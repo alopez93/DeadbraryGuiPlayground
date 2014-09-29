@@ -16,10 +16,10 @@
 /**
 * Apply fonts
 */
-.navbar-inverse .navbar-brand {
-    font-family: "brankovic", sans-serif;
-    font-size: 200%;
-    color: red;
+.navbar .navbar-brand {
+    font-family: "wolf in the city", sans-serif;
+    font-size: 250%;
+    color: black;
 }
 /**
 * User settings page mods

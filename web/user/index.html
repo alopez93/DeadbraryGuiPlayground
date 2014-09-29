@@ -47,7 +47,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="./homepage.html">Deadbrary</a>
+                <a class="navbar-brand" href="../homepage.html">Deadbrary</a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right navbar-form top-nav">
@@ -83,7 +83,7 @@
                             </select>
                             <button type="submit" class="btn btn-default btn-lg"><i class="fa fa-search"></i> Search</button>
                             <div>
-                                <a href="../search.html">Advanced Search</a>
+                                <a href="../search.html?advanced=true">Advanced Search</a>
                             </div>
                         </div>
                     </fieldset>
@@ -109,7 +109,7 @@
                             <div class="row row-centered">
                                
                                 
-                                <div class="col-md-3 col-centered portfolio-item book-control">
+                                <div class="col-md-3 col-centered portfolio-item">
                                     <a href="#">
                                         <img class="img-responsive" src="../resources/img/TestImg1.jpg" alt="">
                                     </a>
@@ -127,7 +127,7 @@
                                 </div>                    
                                 
 
-                                <div class="col-md-3 col-md-offset-1 col-centered portfolio-item book-control">
+                                <div class="col-md-3 col-md-offset-1 col-centered portfolio-item">
                                     <a href="#">
                                         <img class="img-responsive" src="../resources/img/TestImg3.jpg" alt="">
                                     </a>
@@ -223,7 +223,7 @@
                                                     </div>                    
 
 
-                                                    <div class="col-md-3 col-centered portfolio-item">
+                                                    <div class="col-md-3 col-md-offset-1 col-centered portfolio-item">
                                                         <a href="#">
                                                             <img class="img-responsive" src="../resources/img/TestImg3.jpg" alt="">
                                                         </a>
@@ -261,7 +261,7 @@
 
 
 
-                                                    <div class="col-md-3 col-centered portfolio-item">
+                                                    <div class="col-md-3 col-md-offset-1 col-centered portfolio-item">
                                                         <a href="#">
                                                             <img class="img-responsive" src="../resources/img/TestImg6.jpg" alt="">
                                                         </a>
@@ -364,7 +364,7 @@
                                 </div>                    
 
 
-                                <div class="col-md-3 col-centered portfolio-item">
+                                <div class="col-md-3 col-md-offset-1 col-centered portfolio-item">
                                     <a href="#">
                                         <img class="img-responsive" src="../resources/img/TestImg7.jpg" alt="">
                                     </a>
@@ -539,9 +539,10 @@
         <script src="../resources/js/validator.min.js"></script>
 
         <script src="../resources/js/star-rating.min.js"></script>
-
+        <script src="../resources/js/deadbrary.js"></script>
+        
         <script>
-
+            //Populate fields with example data
             $("#LibraryCardNumber").val("856241379");
             $("#Username").val("RickJames815");
             $("#Password").val("Qazwsx1234");
@@ -549,7 +550,7 @@
             $("#libraryCardNumberInput").val("856241379");
             $("#userNameInput").val("RickJames815");
             $("#passwordInput").val("Qazwsx1234");
-            $("#passwordConfirmInput").val("Qazwsx1234");
+            $("#passwordConfirmInput").val("Qazwsx1234");            
 
             if (getUrlParameter("settings") == "true")
             {
@@ -568,33 +569,12 @@
             $('.modal').on('show.bs.modal', centerModal);
             $(window).on("resize", function () {
                 $('.modal:visible').each(centerModal);
-            });
+            });     
 
-            function getUrlParameter(sParam)
-            {
-                var sPageURL = window.location.search.substring(1);
-                var sURLVariables = sPageURL.split('&');
-                for (var i = 0; i < sURLVariables.length; i++)
-                {
-                    var sParameterName = sURLVariables[i].split('=');
-                    if (sParameterName[0] == sParam)
-                    {
-                        return sParameterName[1];
-                    }
-                }
-            }
-
-            function centerModal() {
-                $(this).css('display', 'block');
-                var $dialog = $(this).find(".modal-dialog");
-                var offset = ($(window).height() - $dialog.height()) / 2;
-                // Center modal vertically in window
-                $dialog.css("margin-top", offset);
-            }
-
+            
             //$("#collapseOne").removeClass("in");
             //$("#collapseFour").addClass("in");
-
+            // $(".settings-modal").modal("show");
         </script>
 
 

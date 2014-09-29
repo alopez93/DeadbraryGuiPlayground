@@ -909,11 +909,19 @@
         <!-- Custom Theme JavaScript -->
         <script src="resources/js/sb-admin-2.js"></script>
         
+         <script src="resources/js/deadbrary.js"></script>
+        
         <script>
             $(window).load(function(){
                 $("#viewToggle #list").click(function(){$('#searchDisplay .item').addClass('list-group-item');});
                 $('#viewToggle #grid').click(function(){$('#searchDisplay .item').removeClass('list-group-item');});  
             });
+                        
+            if(getUrlParameter("advanced") == "true")
+            {
+                $(".advanced-search-modal").modal("show");
+            }
+            
         </script>
 
     </body>
