@@ -4,23 +4,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <title>Search</title>
-
         <!-- Bootstrap Core CSS -->
         <link href="resources/css/bootstrap/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Page Custom CSS -->
-        <link href="resources/css/startbootstrap/sb-admin-2.css" rel="stylesheet">
-
+        <!-- startbootstrap.com CSS -->
+        <link href="resources/css/startbootstrap/startbootstrap.css" rel="stylesheet">
         <!-- MetisMenu CSS -->
-        <link href="resources/css/metismenu/metisMenu.min.css" rel="stylesheet">
-        
+        <link href="resources/css/metismenu/metisMenu.min.css" rel="stylesheet">       
         <!-- Custom Fonts -->
         <link href="resources/css/font-awesome/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="resources/css/startbootstrap/col-portfolio.css" rel="stylesheet">
+        <!-- Custom CSS -->
         <link href="resources/css/deadbrary/deadbrary.css" rel="stylesheet">
-        <link href="resources/css/deadbrary/bookavailabilityicon.css" rel="stylesheet">
 
         <script>
             function subject_onClick() {
@@ -56,7 +50,7 @@
 
     <body>
 
-
+        <div id="wrapper">
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0;">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -67,7 +61,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="./homepage.html">Deadbrary</a>
+                <a class="navbar-brand" href="./index.html">Deadbrary</a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right navbar-form top-nav">
@@ -90,7 +84,7 @@
                     </ul>
                 </li>
             </ul>
-            <div class="navbar-left col-lg-9">
+            <div class="navbar-left">
                 <form class="navbar-form" role="search">
                     <fieldset>
                             <div class="form-group">
@@ -677,7 +671,7 @@
                 <form class="form-horizontal form-inline">
                     <fieldset>
                         <div class="form-group col-md-3">
-                            <label class="col-md-6 control-label" for="searchSort">Sort By: </label>
+                            <label class="col-md-4 control-label" for="searchSort">Sort By: </label>
                             <div class="col-md-4">
                                     <select id="searchSort" name="searchSort" class="form-control">
                                         <option value="Relevancy">Relevancy</option>
@@ -691,7 +685,7 @@
                                     </select>
                             </div>
                         </div>
-                        <div id="viewToggle" class="btn-group" data-toggle="buttons">
+                        <div id="viewToggle" class="btn-group col-md-3" data-toggle="buttons">
                             <label id="grid" class="btn btn-primary active">
                                 <input type="radio" name="viewType" checked> <i class="fa fa-th"></i> Grid
                             </label>
@@ -705,12 +699,12 @@
             <br>
             <br>
             <!-- Projects Row -->
-            <div id="searchDisplay" class="row list-group">
-                <div class="col-md-2 item">
+            <div id="searchDisplay" class="row">
+                <div class="col-md-2 portfolio-item">
                         <div class="book-image-group thumbnail">
                             <a href="./book.html" class="book-image-wrapper">
                                 <div id="eBooks-most-pop-book-3" class="book-image">
-                                    <img id="eBooks-most-pop-book-3-img" class="img-responsive fixed-book-image-size" src="resources/img/TestImg3.jpg" alt="">
+                                    <img id="eBooks-most-pop-book-3-img" class="img-responsive" src="resources/img/TestImg3.jpg" alt="">
                                     <span class="book-label label fa-stack fa-lg">
                                         <i class="fa fa-square icon-color-white fa-stack-2x"></i>
                                         <i class="fa fa-book icon-color-green fa-stack-1x"></i>
@@ -727,7 +721,7 @@
                 </div>
                 <div class="col-md-2 item">
                     <a href="./book.html">
-                        <img class="img-responsive fixed-book-image-size" src="resources/img/TestImg2.jpg" alt="">
+                        <img class="img-responsive" src="resources/img/TestImg2.jpg" alt="">
                     </a>
                     <h3>
                         <a href="">Book Name Here...</a>
@@ -738,7 +732,7 @@
                 </div>
                 <div class="col-md-2 item">
                     <a href="./book.html">
-                        <img class="img-responsive fixed-book-image-size" src="resources/img/TestImg3.jpg" alt="">
+                        <img class="img-responsive" src="resources/img/TestImg3.jpg" alt="">
                     </a>
                     <h3>
                         <a href="#">Book Name Here...</a>
@@ -893,6 +887,7 @@
 
         </div>
         <!-- /#page-wrapper -->
+        </div>
 
         <!-- jQuery Version 1.11.0 -->
         <script src="resources/js/jquery-2.1.1.js"></script>

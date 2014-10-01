@@ -78,3 +78,57 @@
 .panel-inverse > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #080808;
 }
+
+/**
+* For Book Availability Icon
+*/
+
+.thumbnail > a > img {
+    display: block;
+    max-width: 100%;
+}
+
+.book-image-group .book-image-wrapper .book-image {
+    position: relative;
+    margin: 0 auto;
+    display: table;
+}
+
+.book-image-group .book-image-wrapper .book-label {
+  position: absolute;      
+  top: 5px;
+  right: 5px;
+}
+
+.fixed-book-image-size {
+    height: 75%; 
+    width: 75%;
+}
+
+.icon-color-black {
+    color: black;
+}
+
+.icon-color-white {
+    color: white;
+}
+
+.icon-color-green {
+    color: green;
+}
+
+.icon-color-red {
+    color: red;
+}
+
+.icon-color-gray {
+    color: gray;
+}
+
+.icon-color-lightgray {
+    color: lightgray;
+}
+
+/**
+* End Book Availability Icon
+*/
