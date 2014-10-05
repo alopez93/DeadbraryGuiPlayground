@@ -1,6 +1,6 @@
 .navbar-admin{
-    background-color:#A62121;
-    border-color:#FF6B6B;
+    background-color:#000099;
+    border-color:#FFFFFF;
 }
 
 .navbar-admin-brand{
@@ -15,3 +15,7 @@
 .navbar-side-color{
     color: #FFFFFF;
 }
+
+ul.navbar-side-color, li, a{
+    color: #FFFFFF;
+} 
