@@ -2,20 +2,32 @@
 
 <html>
     <head>
-        <title>Support Tickets</title>
+        <title>Book Admin Home</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Bootstrap Core CSS -->
         <link href="../resources/css/bootstrap/bootstrap.min.css" rel="stylesheet">
         <!-- Custom Fonts -->
         <link href="../resources/css/font-awesome/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <!-- Custom CSS -->
+        <!-- Custom CSS From StartBootstrap -->
         <link href="../resources/css/startbootstrap/startbootstrap.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="../resources/css/deadbrary/elm-admin.css" rel="stylesheet">
+        <link href="../resources/css/deadbrary/deadbrary.css" rel="stylesheet">
+        <!-- MetisMenu -->
+        <link href="../resources/css/metismenu/metisMenu.min.css" rel="stylesheet">
+        <!--C3 CSS -->
+        <link href = "../resources/css/charts/c3.min.css" rel="stylesheet">
+
+        <!---JavaScript-->
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <script src = "../resources/js/c3.min.js"></script>
     </head>
     <body>
+        
         <div id="navigation">
             <!-- Navigation -->
-            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <nav class="navbar navbar-admin navbar-fixed-top" role="navigation">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -24,12 +36,12 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">Deadbrary</a>
+                    <a class="navbar-admin-brand" href="index.html">Deadbrary</a>
                 </div>
                 <!-- Top Menu Items -->
-                <ul class="nav navbar-right top-nav">
+                <ul class="nav navbar-right">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Book Admin Joe <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle navbar-admin-brand" data-toggle="dropdown"><i class="fa fa-user"></i> Book Admin Joe <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="#"><i class="fa fa-fw fa-user"></i> Account</a>
@@ -45,11 +57,166 @@
                     </li>
                 </ul>
                 <!-- /.navbar-collapse -->
+                <div class="navbar-admin sidebar" style="height:550px;" role="navigation">
+
+                    <div class="sidebar-nav navbar-collapse">
+                        <ul class="nav" id="side-menu">
+                            <li>
+                                <a class="navbar-side-color" href="#"> Reports <span class="fa arrow"></span></a>
+                                <ul class="navbar-side-color nav nav-second-level">
+                                    <li>
+                                        <a href="#">Report Link 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Report Link 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Report Link 3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../admin/add_book.html"> Add A Book</a>
+                            </li>
+                            <li>
+                                <a href="#"> Search Books <span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="#">Search All Books</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Search (Book Format Here)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Search (Book Format Here)</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"> Manage Users <span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="#">Ban a User</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Edit a User</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"> Support Tickets <span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="#">View Support Tickets</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Add a Support Ticket</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.sidebar-collapse -->
+                </div>
+                <!-- /.navbar-static-side -->
             </nav>
+            
         </div>
         
-        <h1> TODO: Menu for displaying new support tickets vs. old support tickets </h1>
+        <!-- Page Content -->
+        <div id="page-wrapper" class="container">
+            
+
+            <!-- Pagination -->
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#">&laquo;</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">1</a>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            <a href="#">3</a>
+                        </li>
+                        <li>
+                            <a href="#">4</a>
+                        </li>
+                        <li>
+                            <a href="#">5</a>
+                        </li>
+                        <li>
+                            <a href="#">&raquo;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Footer -->
+            <footer>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Copyright &copy; Deadbrary 2014</p>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </footer>
+
+    </div>
+    <!-- /.container -->
         
-        <h1> TODO: Make a new page for viewing a support ticket. </h1>
+        <!-- jQuery Version 1.11.0 -->
+        <script src="../resources/js/jquery-2.1.1.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="../resources/js/bootstrap.min.js"></script>
+        
+        <!-- Metis Menu Plugin JavaScript -->
+        <script src="../resources/js/metisMenu.min.js"></script>
+        
+        <!-- Custom Theme JavaScript -->
+        <script src="../resources/js/sb-admin-2.js"></script>
+        
+        <script>
+        var chart = c3.generate({
+                bindto: '#morris-area-chart',
+                data: {
+                x: 'x',
+                columns: [
+                        ['x', '2013-10-01', '2013-11-01', '2013-12-01', '2014-01-01', '2014-02-01', '2014-03-01', '2014-04-01', '2014-05-01', '2014-06-01', '2014-07-01', '2014-08-01', '2014-09-01'],
+                        ['pdf', 30, 20, 25, 40, 41, 15, 50, 45, 40, 35, 51, 12],
+                        ['epub', 80, 50, 60, 61, 57, 35, 50, 55, 70, 40, 55, 60],
+                        ['audiobook', 6, 10, 12, 10, 20, 31, 10, 10, 12, 15, 20, 10],
+                ]
+                },
+                axis: {
+                 y: {
+                        label: { 
+                        text: 'Number Of Downloads',
+                        position: 'outer-middle'
+                        }
+                },
+                x: {
+                        label: {
+                        text: 'Month-Year',
+                        positoin: 'outer-middle'
+                        },
+                        type: 'timeseries',
+                        tick: {
+                                format: '%m-%y'
+                        }
+                }
+                }
+        });
+
+
+        </script>
     </body>
 </html>
