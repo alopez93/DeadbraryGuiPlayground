@@ -3,24 +3,31 @@
 */
 @font-face {
     font-family: 'wolf in the city';
-    src: url('../../fonts/wolf in the city/wolf in the city.woff') format('woff'), url('../fonts/brankovic/brankovic.ttf') format('truetype');
+    src: url('../fonts/wolf in the city/wolf in the city.woff') format('woff'), url('../fonts/wolf in the city/wolf in the city.ttf') format('truetype');
 }
 @font-face {
     font-family: 'brankovic';
-    src: url('../../fonts/brankovic/brankovic.woff') format('woff'), url('../fonts/brankovic/brankovic.ttf') format('truetype');
+    src: url('../fonts/brankovic/brankovic.woff') format('woff'), url('../fonts/brankovic/brankovic.ttf') format('truetype');
 }
 @font-face {
     font-family: 'chunkfive ex';
-    src: url('../../fonts/chunkfive ex/chunkfive ex.woff') format('woff'), url('../fonts/chunkfive ex/chunkfive ex.ttf') format('truetype');
+    src: url('../fonts/chunkfive ex/chunkfive ex.woff') format('woff'), url('../fonts/chunkfive ex/chunkfive ex.ttf') format('truetype');
 }
 /**
 * Apply fonts
 */
 .navbar .navbar-brand {
-    font-family: "wolf in the city", sans-serif;
+   font-family: "chunkfive ex", sans-serif;
     font-size: 250%;
     color: black;
 }
+
+
+.top-nav>li>a {
+    color: black;
+    font-size:110%;
+}
+
 /**
 * User settings page mods
 */
@@ -128,6 +135,8 @@
 .icon-color-lightgray {
     color: lightgray;
 }
+
+
 
 /**
 * End Book Availability Icon
